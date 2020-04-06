@@ -1,36 +1,33 @@
+var body = document.body.classList
 //Задание №1
 function showSplashScreen() { 
 	var elem = document.getElementById("page-splash"); 
-	if (elem.style.display == "none") {
-		elem.style.display = "block"; 
-	}else{ 
-		elem.style.display = "none"; 
-		console.log(elem); 
+	body != 'no-scroll' ? body.add('no-script') : null 
+
+		if(elem){
+			elem.style.display = 'block'	
+		}; 
 	}
-}
 
-showSplashScreen();
+// showSplashScreen();
 
-function hideSplashScreen() { 
+function hideSplashScreen() {
 	var elem = document.getElementById("page-splash"); 
-	
-	if (elem.style.display == "none") {
-		elem.classList.remove("no-scroll");
+	body == 'no-scroll' ? body.remove('no-scroll') : null 
+	if (elem) {
+		elem.style.display = 'none';
 	}
 }
-hideSplashScreen();
+
 
 //Задание №2
 function createCommentElement(comment) { 
 	var comment = document.getElementsByClassName("py-2 pl-3"); 
 	for(i = 0; i < comment.length; i++) { 
-		return console.log(comment[i]); 
+		 console.log(comment[i]);
 	}
 }
 createCommentElement();
-//второй div с классом py-2 pl-3 внутри комента не вывелся
-//это потому что они повтаряются?
-//в условии написано про обьект правильно ли я сделал?
 
 //№3
 
@@ -39,12 +36,13 @@ var img = new Image();
 img.src = 'comment.jpg';
 var post = document.getElementsByClassName("d-bloc kw-100");
 post.innerHTML="<img src='img'>";
-console.log(post); 
-return post; 
+return console.log(post);; 
 }
-createPostElement(); 
+createPostElement();
+//#4
 
-
-
-
-
+addPost(postElement); {
+var postElement = document.createElement("div");
+postElement.innerHTML = as;
+document.getElementsByTagName('body')[0].appendChild(div);
+}
