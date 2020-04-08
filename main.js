@@ -16,7 +16,7 @@ function hideSplashScreen() {
 	body == 'no-scroll' ? body.remove('no-scroll') : null 
 	if (elem) {
 		elem.style.display = 'none';
-	}
+	};
 }
 
 
@@ -25,8 +25,9 @@ function createCommentElement(comment) {
 	var comment = document.getElementsByClassName("py-2 pl-3"); 
 	for(i = 0; i < comment.length; i++) { 
 		 console.log(comment[i]);
-	}
+	};
 }
+
 createCommentElement();
 
 //№3
